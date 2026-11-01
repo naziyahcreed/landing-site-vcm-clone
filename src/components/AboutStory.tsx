@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Calendar, ArrowRight, ShieldCheck, Users, UtensilsCrossed, BedDouble, Car, Bike, Wind, Sparkles, ChevronsUp } from 'lucide-react';
+import { Phone, Calendar, ArrowRight, ShieldCheck, Users, UtensilsCrossed, BedDouble, Car, Bike, Wind, Sparkles, ChevronsUp, Zap, Accessibility } from 'lucide-react';
 import { VENUE_INFO, FACILITIES } from '../data/banquetData';
 import { SectionDivider } from './SectionDivider';
 import { FadeInUp } from './FadeInUp';
@@ -12,6 +12,8 @@ const FACILITY_ICON_MAP: Record<string, React.FC<{ className?: string }>> = {
   'f-seating': Users,
   'f-dining': UtensilsCrossed,
   'f-rooms': BedDouble,
+  'f-generator': Zap,
+  'f-wheelchair': Accessibility,
   'f-cars-valet': Car,
   'f-bikes': Bike,
   'f-ac': Wind,
@@ -79,18 +81,18 @@ export const AboutStory: React.FC<AboutStoryProps> = ({ onOpenBooking }) => {
                     </p>
                   </div>
                   <p className="text-[11px] text-[#777777] max-w-xs mx-auto leading-relaxed">
-                    Spacious air-conditioned celebration hall with 1000+ seating (1500+ floating), 400+ dining, and 13 AC rooms.
+                    Spacious air-conditioned celebration hall with 600+ seating (1500+ floating), 200+ dining, 13 AC rooms, and 100% generator power backup.
                   </p>
                 </div>
 
                 {/* Bottom Highlight Pills */}
                 <div className="grid grid-cols-2 gap-2 pt-3 border-t border-[#E5E0D8]">
                   <div className="bg-white/80 p-2 rounded-lg border border-[#C5A059]/30 text-center">
-                    <div className="text-[11px] font-bold text-[#4A1C40]">1000+ Seated</div>
+                    <div className="text-[11px] font-bold text-[#4A1C40]">600+ Seated</div>
                     <div className="text-[9px] text-[#777777]">1500+ Floating</div>
                   </div>
                   <div className="bg-white/80 p-2 rounded-lg border border-[#C5A059]/30 text-center">
-                    <div className="text-[11px] font-bold text-[#4A1C40]">400+ Dining</div>
+                    <div className="text-[11px] font-bold text-[#4A1C40]">200+ Dining</div>
                     <div className="text-[9px] text-[#777777]">Traditional Feast</div>
                   </div>
                 </div>
@@ -106,7 +108,7 @@ export const AboutStory: React.FC<AboutStoryProps> = ({ onOpenBooking }) => {
               >
                 <ShieldCheck className="w-5 h-5 text-[#C5A059]" />
                 <div className="text-left">
-                  <div className="text-xs font-bold leading-tight">1000+ Seated</div>
+                  <div className="text-xs font-bold leading-tight">600+ Seated</div>
                   <div className="text-[10px] text-neutral-300">1500+ Floating</div>
                 </div>
               </div>
