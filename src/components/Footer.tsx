@@ -119,6 +119,12 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                 </a>
               </li>
               <li>
+                <a href="#video-tour" className="hover:text-[#C5A059] transition-colors flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#C5A059]" />
+                  <span>Virtual Video Tour</span>
+                </a>
+              </li>
+              <li>
                 <a href="#moments" className="hover:text-[#C5A059] transition-colors flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C5A059]" />
                   <span>Mahal Moments</span>
